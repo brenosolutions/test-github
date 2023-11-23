@@ -77,15 +77,34 @@ body {
 		z-index: 999;
 	}
 
+	#menu-icon.active::before {
+		content: '\f00d';
+	}
+
 	.navbar .menu {
 		background: var(--main-color);
 		position: fixed;
 		height: 100vh;
 		width: 100%;
-		left: -100px;
+		left: -100%;
 		top: 0;
 		text-align: center;
 		padding-top: 80px;
+		transition: all 0.3s ease;
+	}
+
+	#menu-site.active {
+		left: 0;
+	}
+
+	.navbar .menu li {
+		display: block;
+	}
+
+	.navbar .menu li a {
+		display: inline-block;
+		margin: 13px 0;
+		font-size: 25px;
 	}
 
 }

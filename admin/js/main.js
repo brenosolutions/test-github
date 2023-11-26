@@ -22,7 +22,30 @@ document.querySelector('.bars').addEventListener('click', () => {
 })
 
 
+//dropdown action
+function actionDropdown(id) {
+    document.getElementById('actionDropdown' + id).classList.toggle('show-dropdown-action')
+}
 
+window.onclick = (e) => {
+    if (!e.target.matches('.dropdown-btn-action, .avatar img, .notification i, .notification .number')) {
+        closeDropdownAction()
+        document.querySelectorAll('.dropdown-menu').forEach((value, key) => {
+            value.classList.remove('active')
+        })
+    }
+}
+
+function closeDropdownAction() {
+    var dropdowns = document.querySelectorAll('.dropdown-action-item')
+    for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i]
+
+        if (openDropdown.classList.contains('show-dropdown-action')) {
+            openDropdown.classList.remove('show-dropdown-action')
+        }
+    }
+}
 
 
 

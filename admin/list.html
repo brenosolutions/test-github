@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - SiteName</title>
+    <title>Dashboard - BSHosting</title>
 
     <link rel="stylesheet" href="css/main-admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -18,7 +18,7 @@
             <div class="bars">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <img src="img/logo.png" alt="Logo" class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
 
         </div>
 
@@ -26,7 +26,7 @@
 
             <div class="notification">
                 <i class="fa-solid fa-bell"></i>
-                <span class="number">7</span>
+                <span class="number">2</span>
                 <div class="dropdown-menu">
                     <ul class="dropdown-content">
                         <li>
@@ -61,9 +61,6 @@
             </div>
 
         </div>
-
-
-
     </nav>
 
     <div class="content">
@@ -86,9 +83,14 @@
         <div class="wrapper">
             <div class="row">
                 <div class="top-list">
-                    <span class="title-content">List</span>
+                    <span class="title-content">Gerenciar Usuários</span>
                     <div class="top-list-right">
-                        Botão
+                        <!--  <button type="button" class="btn-success">
+                            <i class="fa-solid fa-plus" aria-label="Cadastrar"></i>
+                        </button> -->
+                        <button type="button" class="btn-success">
+                            Cadastrar
+                        </button>
                     </div>
                 </div>
 
@@ -107,19 +109,51 @@
                             <td class="list-body-content">1</td>
                             <td class="list-body-content">Fulano</td>
                             <td class="list-body-content">fulano@fulano.com</td>
-                            <td class="list-body-content">Visualizar - Editar - Apagar</td>
+                            <td class="list-body-content">
+
+                                <div class="dropdown-action">
+                                    <button onclick="actionDropdown(1)" class="dropdown-btn-action"
+                                        type="button">Ações</button>
+                                    <div id="actionDropdown1" class="dropdown-action-item">
+                                        <a href="#">Visualizar</a>
+                                        <a href="#">Editar</a>
+                                        <a href="#">Excluir</a>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
                         <tr>
                             <td class="list-body-content">2</td>
                             <td class="list-body-content">Ciclano</td>
                             <td class="list-body-content">ciclano@ciclano.com</td>
-                            <td class="list-body-content">Visualizar - Editar - Apagar</td>
+                            <td class="list-body-content">
+                                <button type="button" class="btn-primary" title="Visualizar">
+                                    <i class="fa-solid fa-eye" aria-label="Visualizar"></i>
+                                </button>
+                                <button type="button" class="btn-warning" title="Editar">
+                                    <i class="fa-solid fa-pen-to-square" aria-label="Editar"></i>
+                                </button>
+                                <button type="button" class="btn-danger" title="Excluir">
+                                    <i class="fa-solid fa-trash" aria-label="Excluir"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <td class="list-body-content">3</td>
                             <td class="list-body-content">Beltrano</td>
                             <td class="list-body-content">beltrano@beltrano.com</td>
-                            <td class="list-body-content">Visualizar - Editar - Apagar</td>
+                            <td class="list-body-content">
+                                <button type="button" class="btn-primary" title="Visualizar">
+                                    Visualizar
+                                </button>
+                                <button type="button" class="btn-warning" title="Editar">
+                                    Editar
+                                </button>
+                                <button type="button" class="btn-danger" title="Excluir">
+                                    Excluir
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

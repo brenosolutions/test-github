@@ -69,11 +69,11 @@
     <div class="content">
 
         <div class="sidebar">
-            <a href="index.html" class="sidebar-nav active">
+            <a href="index.html" class="sidebar-nav ">
                 <i class="icon fa-solid fa-house">
                 </i><span>Dashboard</span>
             </a>
-            <a href="list.html" class="sidebar-nav">
+            <a href="list.html" class="sidebar-nav active">
                 <i class="icon fa-solid fa-users"></i>
                 <span>Usuários</span>
             </a>
@@ -85,29 +85,59 @@
 
         <div class="wrapper">
             <div class="row">
-                <div class="box box-first">
-                    <span class="fa-solid fa-users"></span>
-                    <span>397</span>
-                    <span>Usuários</span>
+                <div class="top-list">
+                    <span class="title-content">List</span>
+                    <div class="top-list-right">
+                        Botão
+                    </div>
                 </div>
-                <div class="box box-second">
-                    <span class="fa-solid fa-truck-ramp-box"></span>
-                    <span>43</span>
-                    <span>Entregas</span>
+
+                <table class="table-list">
+                    <thead class="list-head">
+                        <tr>
+                            <th class="list-head-content">ID</th>
+                            <th class="list-head-content">Name</th>
+                            <th class="list-head-content">E-mail</th>
+                            <th class="list-head-content">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="list-body">
+                        <tr>
+                            <td class="list-body-content">1</td>
+                            <td class="list-body-content">Fulano</td>
+                            <td class="list-body-content">fulano@fulano.com</td>
+                            <td class="list-body-content">Visualizar - Editar - Apagar</td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">2</td>
+                            <td class="list-body-content">Ciclano</td>
+                            <td class="list-body-content">ciclano@ciclano.com</td>
+                            <td class="list-body-content">Visualizar - Editar - Apagar</td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">3</td>
+                            <td class="list-body-content">Beltrano</td>
+                            <td class="list-body-content">beltrano@beltrano.com</td>
+                            <td class="list-body-content">Visualizar - Editar - Apagar</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="content-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="active">3</a>
+                        <a href="#">3</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </div>
-                <div class="box box-third">
-                    <span class="fa-solid fa-circle-check"></span>
-                    <span>12</span>
-                    <span>Entregas Completas</span>
-                </div>
-                <div class="box box-fourth">
-                    <span class="fa-solid fa-triangle-exclamation"></span>
-                    <span>3</span>
-                    <span>Alertas</span>
-                </div>
+
             </div>
         </div>
-
     </div>
 
     <script src="js/main.js"></script>

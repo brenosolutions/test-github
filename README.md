@@ -1,2 +1,3 @@
-# Projeto de treinamento
-Estrutura html e css
+# Github test project
+Basic structure html, css, javascript
+Development main page and admin page

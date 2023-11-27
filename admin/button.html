@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário - BSHosting</title>
+    <title>Botões - BSHosting</title>
 
     <link rel="stylesheet" href="css/main-admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -74,7 +74,7 @@
                 <i class="icon fa-solid fa-list"></i>
                 <span>Listar</span>
             </a>
-            <a href="form.html" class="sidebar-nav active">
+            <a href="form.html" class="sidebar-nav">
                 <i class="icon fa-solid fa-file-lines"></i>
                 <span>Formulário</span>
             </a>
@@ -86,7 +86,7 @@
                 <i class="icon fa-solid fa-triangle-exclamation"></i>
                 <span>Alertas</span>
             </a>
-            <a href="button.html" class="sidebar-nav">
+            <a href="button.html" class="sidebar-nav active">
                 <i class="icon fa-solid fa-computer-mouse"></i>
                 <span>Botões</span>
             </a>
@@ -120,83 +120,38 @@
         <div class="wrapper">
             <div class="row">
                 <div class="top-list">
-                    <span class="title-content">Formulario</span>
-                    <div class="top-list-right">
-                        <a href="list.html" class="btn-info">
-                            Listar
-                        </a>
-                    </div>
+                    <span class="title-content">Botões</span>
+
                 </div>
 
                 <div class="content-adm">
-                    <form action="" class="form-admin">
-                        <div class="row-input">
-                            <div class="column">
-                                <label class="ttile-input" for="name">Nome</label>
-                                <input type="text" name="name" id="name" placeholder="Nome" class="input-adm">
-                            </div>
-                            <div class="column">
-                                <label class="ttile-input" for="email">E-email</label>
-                                <input type="email" name="email" id="email" placeholder="Email" class="input-adm">
-                            </div>
-                        </div>
-
-                        <div class="row-input">
-                            <div class="column">
-                                <label class="ttile-input" for="text3">text 3</label>
-                                <input type="text" name="text3" id="text3" placeholder="text 3" class="input-adm">
-                            </div>
-                            <div class="column">
-                                <label class="ttile-input" for="text4">text 4</label>
-                                <input type="text" name="text4" id="text4" placeholder="text 4" class="input-adm">
-                            </div>
-                        </div>
-
-                        <div class="row-input">
-                            <div class="column">
-                                <label class="ttile-input" for="text5">text 5</label>
-                                <input type="text" name="text5" id="text5" placeholder="text 5" class="input-adm">
-                            </div>
-                        </div>
-
-                        <div class="row-input">
-                            <div class="column">
-                                <label class="ttile-input" for="select1">Select 1</label>
-                                <select name="select1" id="select1" class="input-adm">
-                                    <option>Selecione</option>
-                                    <option value="1">Opção 1</option>
-                                    <option value="2">opção 2</option>
-                                    <option value="3">opção 3</option>
-                                </select>
-
-                            </div>
-                            <div class="column">
-                                <label class="ttile-input" for="select1">Select 2</label>
-
-                                <select name="select1" id="select1" class="input-adm">
-                                    <option disabled selected>Selecione</option>
-                                    <option value="1">Opção 1</option>
-                                    <option value="2">opção 2</option>
-                                    <option value="3">opção 3</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                        <div class="row-input">
-                            <div class="column">
-                                <label class="ttile-input" for="desc">Descrição</label>
-                                <textarea name="desc" id="desc" rows="5" class="input-adm"></textarea>
-                            </div>
-
-                        </div>
-                        <button type="submit" class="btn-success">Cadastrar</button>
-                    </form>
+                    <button class="btn-primary" title="Visualizar">Primary</button>
+                    <button class="btn-success" title="Visualizar">Success</button>
+                    <button class="btn-warning">Warning</button>
+                    <button class="btn-danger">Danger</button>
+                    <button class="btn-info">Info</button>
                 </div>
-
-
-
-
+                <div class="content-adm">
+                    <button class="btn-outline-primary" title="Visualizar">Primary</button>
+                    <button class="btn-outline-success" title="Visualizar">Success</button>
+                    <button class="btn-outline-warning">Warning</button>
+                    <button class="btn-outline-danger">Danger</button>
+                    <button class="btn-outline-info">Info</button>
+                </div>
+                <div class="content-adm">
+                    <button class="btn-primary" aria-label="primary"><i class="fa-solid fa-eye"></i></button>
+                    <button class="btn-success" aria-label="success"><i class="fa-solid fa-square-plus"></i></button>
+                    <button class="btn-warning" aria-label="warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn-danger" aria-label="danger"><i class="fa-solid fa-trash"></i></button>
+                    <button class="btn-info" aria-label="info"><i class="fa-solid fa-circle-info"></i></button>
+                </div>
+                <div class="content-adm">
+                    <button class="btn-outline-primary" aria-label="primary"><i class="fa-solid fa-eye"></i></button>
+                    <button class="btn-outline-success" aria-label="success"><i class="fa-solid fa-square-plus"></i></button>
+                    <button class="btn-outline-warning" aria-label="warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn-outline-danger" aria-label="danger"><i class="fa-solid fa-trash"></i></button>
+                    <button class="btn-outline-info" aria-label="info"><i class="fa-solid fa-circle-info"></i></button>
+                </div>
 
             </div>
         </div>

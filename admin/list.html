@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - BSHosting</title>
+    <title>Listar - BSHosting</title>
 
     <link rel="stylesheet" href="css/main-admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -72,12 +72,45 @@
             </a>
             <a href="list.html" class="sidebar-nav active">
                 <i class="icon fa-solid fa-list"></i>
-                <span>Lista</span>
+                <span>Listar</span>
             </a>
             <a href="form.html" class="sidebar-nav">
                 <i class="icon fa-solid fa-file-lines"></i>
                 <span>Formulário</span>
             </a>
+            <a href="view.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-eye"></i>
+                <span>Visualizar</span>
+            </a>
+            <a href="alert.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-triangle-exclamation"></i>
+                <span>Alertas</span>
+            </a>
+            <a href="button.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-computer-mouse"></i>
+                <span>Botões</span>
+            </a>
+
+            <button class="dropdown-btn">
+                <i class="fa-solid fa-users"></i>
+                <span>Dropdown</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#" class="sidebar-nav">
+                    <i class="icon fa-solid fa-user-plus"></i>
+                    <span>Link 1</span>
+                </a>
+                <a href="#" class="sidebar-nav">
+                    <i class="icon fa-solid fa-user-gear"></i>
+                    <span>Link 2</span>
+                </a>
+                <a href="#" class="sidebar-nav">
+                    <i class="icon fa-solid fa-user-shield"></i>
+                    <span>Link 3</span>
+                </a>
+            </div>
+
             <a href="login.html" class="sidebar-nav">
                 <i class="icon fa-solid fa-right-from-bracket">
                 </i><span>Sair</span>
@@ -87,7 +120,7 @@
         <div class="wrapper">
             <div class="row">
                 <div class="top-list">
-                    <span class="title-content">Lista</span>
+                    <span class="title-content">Listar</span>
                     <div class="top-list-right">
 
                         <a href="form.html" class="btn-success">
@@ -118,7 +151,7 @@
                                         Ação
                                     </button>
                                     <div id="actionDropdown1" class="dropdown-action-item">
-                                        <a href="#">Visualizar</a>
+                                        <a href="view.html">Visualizar</a>
                                         <a href="form.html">Editar</a>
                                         <a href="#">Excluir</a>
                                     </div>
@@ -131,7 +164,87 @@
                             <td class="list-body-content">Ciclano</td>
                             <td class="list-body-content">ciclano@ciclano.com</td>
                             <td class="list-body-content">
-                                <a href="#" class="btn-primary me-1" title="Visualizar">
+                                <div class="dropdown-action">
+                                    <button onclick="actionDropdown(2)" class="dropdown-btn-action" type="button">
+                                        Ação
+                                    </button>
+                                    <div id="actionDropdown2" class="dropdown-action-item">
+                                        <a href="view.html">Visualizar</a>
+                                        <a href="form.html">Editar</a>
+                                        <a href="#">Excluir</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">3</td>
+                            <td class="list-body-content">Beltrano</td>
+                            <td class="list-body-content">beltrano@beltrano.com</td>
+                            <td class="list-body-content">
+                                <div class="dropdown-action">
+                                    <button onclick="actionDropdown(3)" class="dropdown-btn-action" type="button">
+                                        Ação
+                                    </button>
+                                    <div id="actionDropdown3" class="dropdown-action-item">
+                                        <a href="view.html">Visualizar</a>
+                                        <a href="form.html">Editar</a>
+                                        <a href="#">Excluir</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="content-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="active">3</a>
+                        <a href="#">3</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+
+                <table class="table-list">
+                    <thead class="list-head">
+                        <tr>
+                            <th class="list-head-content">ID</th>
+                            <th class="list-head-content">Name</th>
+                            <th class="list-head-content">E-mail</th>
+                            <th class="list-head-content">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="list-body">
+                        <tr>
+                            <td class="list-body-content">1</td>
+                            <td class="list-body-content">Fulano</td>
+                            <td class="list-body-content">fulano@fulano.com</td>
+                            <td class="list-body-content">
+
+                                <div class="dropdown-action">
+                                    <a href="view.html" class="btn-primary me-1" title="Visualizar">
+                                        <i class="fa-solid fa-eye" aria-label="Visualizar"></i>
+                                    </a>
+                                    <a href="form.html" class="btn-warning me-1" title="Editar">
+                                        <i class="fa-solid fa-pen-to-square" aria-label="Editar"></i>
+                                    </a>
+                                    <a href="#" class="btn-danger" title="Excluir">
+                                        <i class="fa-solid fa-trash" aria-label="Excluir"></i>
+                                    </a>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">2</td>
+                            <td class="list-body-content">Ciclano</td>
+                            <td class="list-body-content">ciclano@ciclano.com</td>
+                            <td class="list-body-content">
+                                <a href="view.html" class="btn-primary me-1" title="Visualizar">
                                     <i class="fa-solid fa-eye" aria-label="Visualizar"></i>
                                 </a>
                                 <a href="form.html" class="btn-warning me-1" title="Editar">
@@ -147,7 +260,83 @@
                             <td class="list-body-content">Beltrano</td>
                             <td class="list-body-content">beltrano@beltrano.com</td>
                             <td class="list-body-content">
-                                <a href="#" class="btn-primary me-1" title="Visualizar">
+                                <a href="view.html" class="btn-primary me-1" title="Visualizar">
+                                    <i class="fa-solid fa-eye" aria-label="Visualizar"></i>
+                                </a>
+                                <a href="form.html" class="btn-warning me-1" title="Editar">
+                                    <i class="fa-solid fa-pen-to-square" aria-label="Editar"></i>
+                                </a>
+                                <a href="#" class="btn-danger" title="Excluir">
+                                    <i class="fa-solid fa-trash" aria-label="Excluir"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="content-pagination">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#" class="active">3</a>
+                        <a href="#">3</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+
+                <table class="table-list">
+                    <thead class="list-head">
+                        <tr>
+                            <th class="list-head-content">ID</th>
+                            <th class="list-head-content">Name</th>
+                            <th class="list-head-content">E-mail</th>
+                            <th class="list-head-content">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="list-body">
+                        <tr>
+                            <td class="list-body-content">1</td>
+                            <td class="list-body-content">Fulano</td>
+                            <td class="list-body-content">fulano@fulano.com</td>
+                            <td class="list-body-content">
+
+                                <a href="view.html" class="btn-primary me-1" title="Visualizar">
+                                    Visualizar
+                                </a>
+                                <a href="form.html" class="btn-warning me-1" title="Editar">
+                                    Editar
+                                </a>
+                                <a href="#" class="btn-danger" title="Excluir">
+                                    Excluir
+                                </a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">2</td>
+                            <td class="list-body-content">Ciclano</td>
+                            <td class="list-body-content">ciclano@ciclano.com</td>
+                            <td class="list-body-content">
+                                <a href="view.html" class="btn-primary me-1" title="Visualizar">
+                                    Visualizar
+                                </a>
+                                <a href="form.html" class="btn-warning me-1" title="Editar">
+                                    Editar
+                                </a>
+                                <a href="#" class="btn-danger" title="Excluir">
+                                    Excluir
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list-body-content">3</td>
+                            <td class="list-body-content">Beltrano</td>
+                            <td class="list-body-content">beltrano@beltrano.com</td>
+                            <td class="list-body-content">
+                                <a href="view.html" class="btn-primary me-1" title="Visualizar">
                                     Visualizar
                                 </a>
                                 <a href="form.html" class="btn-warning me-1" title="Editar">

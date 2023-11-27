@@ -71,8 +71,12 @@
                 </i><span>Dashboard</span>
             </a>
             <a href="list.html" class="sidebar-nav active">
-                <i class="icon fa-solid fa-users"></i>
-                <span>Usuários</span>
+                <i class="icon fa-solid fa-list"></i>
+                <span>Lista</span>
+            </a>
+            <a href="form.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-file-lines"></i>
+                <span>Formulário</span>
             </a>
             <a href="login.html" class="sidebar-nav">
                 <i class="icon fa-solid fa-right-from-bracket">
@@ -83,14 +87,12 @@
         <div class="wrapper">
             <div class="row">
                 <div class="top-list">
-                    <span class="title-content">Gerenciar Usuários</span>
+                    <span class="title-content">Lista</span>
                     <div class="top-list-right">
-                        <!--  <button type="button" class="btn-success">
-                            <i class="fa-solid fa-plus" aria-label="Cadastrar"></i>
-                        </button> -->
-                        <button type="button" class="btn-success">
+
+                        <a href="form.html" class="btn-success">
                             Cadastrar
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -112,11 +114,12 @@
                             <td class="list-body-content">
 
                                 <div class="dropdown-action">
-                                    <button onclick="actionDropdown(1)" class="dropdown-btn-action"
-                                        type="button">Ações</button>
+                                    <button onclick="actionDropdown(1)" class="dropdown-btn-action" type="button">
+                                        Ação
+                                    </button>
                                     <div id="actionDropdown1" class="dropdown-action-item">
                                         <a href="#">Visualizar</a>
-                                        <a href="#">Editar</a>
+                                        <a href="form.html">Editar</a>
                                         <a href="#">Excluir</a>
                                     </div>
                                 </div>
@@ -128,15 +131,15 @@
                             <td class="list-body-content">Ciclano</td>
                             <td class="list-body-content">ciclano@ciclano.com</td>
                             <td class="list-body-content">
-                                <button type="button" class="btn-primary" title="Visualizar">
+                                <a href="#" class="btn-primary me-1" title="Visualizar">
                                     <i class="fa-solid fa-eye" aria-label="Visualizar"></i>
-                                </button>
-                                <button type="button" class="btn-warning" title="Editar">
+                                </a>
+                                <a href="form.html" class="btn-warning me-1" title="Editar">
                                     <i class="fa-solid fa-pen-to-square" aria-label="Editar"></i>
-                                </button>
-                                <button type="button" class="btn-danger" title="Excluir">
+                                </a>
+                                <a href="#" class="btn-danger" title="Excluir">
                                     <i class="fa-solid fa-trash" aria-label="Excluir"></i>
-                                </button>
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -144,15 +147,15 @@
                             <td class="list-body-content">Beltrano</td>
                             <td class="list-body-content">beltrano@beltrano.com</td>
                             <td class="list-body-content">
-                                <button type="button" class="btn-primary" title="Visualizar">
+                                <a href="#" class="btn-primary me-1" title="Visualizar">
                                     Visualizar
-                                </button>
-                                <button type="button" class="btn-warning" title="Editar">
+                                </a>
+                                <a href="form.html" class="btn-warning me-1" title="Editar">
                                     Editar
-                                </button>
-                                <button type="button" class="btn-danger" title="Excluir">
+                                </a>
+                                <a href="#" class="btn-danger" title="Excluir">
                                     Excluir
-                                </button>
+                                </a>
                             </td>
                         </tr>
                     </tbody>

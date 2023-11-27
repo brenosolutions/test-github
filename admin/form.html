@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - BSHosting</title>
+
+    <link rel="stylesheet" href="css/main-admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="navbar-content">
+
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+
+        </div>
+
+        <div class="navbar-content">
+
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+                <span class="number">2</span>
+                <div class="dropdown-menu">
+                    <ul class="dropdown-content">
+                        <li>
+                            <img src="img/user.jpg" alt="User" width="40">
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/user.jpg" alt="User" width="40">
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img src="img/user.jpg" alt="User" width="40">
+                <div class="dropdown-menu setting">
+                    <div class="item">
+                        <span class="fa-solid fa-user"></span> Perfil
+                    </div>
+                    <div class="item">
+                        <span class="fa-solid fa-gear"></span> Configurações
+                    </div>
+                    <div class="item">
+                        <span class="fa-solid fa-right-from-bracket"></span> Sair
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-house">
+                </i><span>Dashboard</span>
+            </a>
+            <a href="list.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-list"></i>
+                <span>Lista</span>
+            </a>
+            <a href="form.html" class="sidebar-nav active">
+                <i class="icon fa-solid fa-file-lines"></i>
+                <span>Formulário</span>
+            </a>
+            <a href="login.html" class="sidebar-nav">
+                <i class="icon fa-solid fa-right-from-bracket">
+                </i><span>Sair</span>
+            </a>
+        </div>
+
+        <div class="wrapper">
+            <div class="row">
+                <div class="top-list">
+                    <span class="title-content">Formulario</span>
+                    <div class="top-list-right">
+                        <a href="list.html" class="btn-info">
+                            Lista
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content-adm">
+                    <form action="" class="form-admin">
+                        <div class="row-input">
+                            <div class="column">
+                                <label class="ttile-input" for="name">Nome</label>
+                                <input type="text" name="name" id="name" placeholder="Nome" class="input-adm">
+                            </div>
+                            <div class="column">
+                                <label class="ttile-input" for="email">E-email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" class="input-adm">
+                            </div>
+                        </div>
+
+                        <div class="row-input">
+                            <div class="column">
+                                <label class="ttile-input" for="text3">text 3</label>
+                                <input type="text" name="text3" id="text3" placeholder="text 3" class="input-adm">
+                            </div>
+                            <div class="column">
+                                <label class="ttile-input" for="text4">text 4</label>
+                                <input type="text" name="text4" id="text4" placeholder="text 4" class="input-adm">
+                            </div>
+                        </div>
+
+                        <div class="row-input">
+                            <div class="column">
+                                <label class="ttile-input" for="text5">text 5</label>
+                                <input type="text" name="text5" id="text5" placeholder="text 5" class="input-adm">
+                            </div>
+                        </div>
+
+                        <div class="row-input">
+                            <div class="column">
+                                <label class="ttile-input" for="select1">Select 1</label>
+                                <select name="select1" id="select1" class="input-adm">
+                                    <option>Selecione</option>
+                                    <option value="1">Opção 1</option>
+                                    <option value="2">opção 2</option>
+                                    <option value="3">opção 3</option>
+                                </select>
+
+                            </div>
+                            <div class="column">
+                                <label class="ttile-input" for="select1">Select 2</label>
+
+                                <select name="select1" id="select1" class="input-adm">
+                                    <option disabled selected>Selecione</option>
+                                    <option value="1">Opção 1</option>
+                                    <option value="2">opção 2</option>
+                                    <option value="3">opção 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row-input">
+                            <div class="column">
+                                <label class="ttile-input" for="desc">Descrição</label>
+                                <textarea name="desc" id="desc" rows="5" class="input-adm"></textarea>
+                            </div>
+
+                        </div>
+                        <button type="submit" class="btn-success">Cadastrar</button>
+                    </form>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

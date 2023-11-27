@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'ubuntu', sans-serif;
+    text-decoration: none;
 }
 
 :root {
@@ -30,6 +31,10 @@
 
 body {
     background: var(--main-color);
+}
+
+.me-1 {
+    margin-right: .5rem;
 }
 
 .navbar {
@@ -426,6 +431,8 @@ body {
     cursor: pointer;
     font-size: 15px;
     transition: all .3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .btn-primary:hover {
@@ -442,6 +449,8 @@ body {
     cursor: pointer;
     font-size: 15px;
     transition: all .3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .btn-success:hover {
@@ -458,6 +467,8 @@ body {
     cursor: pointer;
     font-size: 15px;
     transition: all .3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .btn-warning:hover {
@@ -475,6 +486,8 @@ body {
     cursor: pointer;
     font-size: 15px;
     transition: all .3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .btn-danger:hover {
@@ -491,9 +504,59 @@ body {
     cursor: pointer;
     font-size: 15px;
     transition: all .3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .btn-info:hover {
     background-color: var(--fourth-color);
     color: var(--info-color);
+}
+
+
+.wrapper .content-adm {
+    width: 100%;
+    padding: 10px;
+}
+
+
+.form-adm {
+    width: 100%;
+    position: relative;
+    margin: 10px auto 0 auto;
+}
+
+.row-input {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.title-input {
+    color: var(--fourth-bg-color);
+    font-size: 14px;
+}
+
+input.input-adm,
+textarea.input-adm,
+select.input-adm {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid var(--active-color);
+    margin-top: 5px;
+}
+
+textarea.input-adm {
+    resize: none;
+}
+
+input.input-adm:focus,
+textarea.input-adm:focus,
+select.input-adm:focus {
+    outline: none;
+    border-color: var(--site-color);
 }
